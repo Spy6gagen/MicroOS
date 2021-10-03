@@ -1,0 +1,234 @@
+@echo off
+
+set Software=Yago10
+set Installs=0
+set user=Login
+set storage=4000gbfree
+set games=0
+set updates=1 updates
+set drive=No drive installed
+set Data=Unknow
+set Computerhost=Your all good
+set Softwarehost=Your all good
+set Connection=Not connected
+set Devicesconnected=0devices
+
+:Startingup
+title MicroOS
+color 0b
+echo loading...
+timeout 2 >nul
+echo Done Taking you to main
+timeout 2 >nul
+goto Main
+
+:Main
+cls
+echo Welcome User
+echo Version:Yago XP
+echo Date:%date%
+echo Connection:%Connection%
+echo Owner:%user%
+echo Data:%Data%
+echo Drive:%drive%
+echo Games:%games%
+echo Updates:%updates%
+echo Software:%Software%
+echo Installs:%Installs%
+echo Storage:%storage%
+echo Computer:%Computerhost%
+echo Software:%Softwarehost%
+echo Devices connected:%Devicesconnected%
+echo ------------------------
+echo Secruity:Clear
+echo 1)Games
+echo 2)Data
+echo 3)Software Hoster
+echo 4)Computer Host
+echo 5)Kalo Software
+echo 6)Yago Edge
+echo 7)Notes
+echo 8)Settings
+set /p s=start?
+if %s% == 1 goto Games
+if %s% == 2 goto Data
+if %s% == 3 goto Software
+if %s% == 4 goto Computer
+if %s% == 5 goto Kalo
+if %s% == 6 goto Yago
+if %s% == 7 goto Notes
+if %s% == 8 goto Settings
+if %s% == 6 goto Microhelp
+
+:Games
+echo Failed to install :(
+echo please exit
+set /p 1=...
+if %1% == 1 goto Main
+
+:Data
+cls
+echo Returning Screen
+timeout 1 >nul
+goto main
+
+:Software
+echo Softwares Online
+timeout 3 >nul
+goto main
+
+:Computer
+cls
+echo 1)Una
+echo 2)Shutdown Settings
+echo 3)Desktop Runner.hga
+echo 4)exit
+set /p q=Filerun-
+if %q% == 1 goto Con
+if %q% == 2 goto shut
+if %q% == 3 goto desk
+if %q% == 4 goto Main
+
+:Con
+cls
+echo 1)Connection
+echo 2)Kunikuo
+echo 3)Union
+set /p w=Filerun-
+if %w% == 1 goto Connection
+if %w% == 2 goto Kunikuo
+if %w% == 3 goto Union
+
+:Connection
+cls
+echo choose interrnet provider
+echo -------------------------
+echo 1)Micro inter
+echo 2)Spectrum
+echo 3)Vpr Inter
+echo 4)Union Inter
+echo 5)Other
+set /p s=Select-
+if %s% == 1 goto Micro
+if %s% == 2 goto Spectrum
+if %s% == 3 goto Vpr
+if %s% == 4 goto Union
+if %s% == 5 goto Other
+
+:Micro
+cls
+echo Enter Password name
+set /p name=Wifi-
+if %name% == '5' goto setinter
+if %name% == '8' goto setiner2
+
+:setinter
+
+set Connection=Connection strong
+goto Main
+
+:setiner2
+set Connection=Connection strong
+echo Connecting...
+timeout 2 >nul
+echo connected!
+timeout 2 >nul
+goto Main
+
+:Kalo
+echo please enter a name
+set /p name=name:
+echo thank you %name%
+echo date:%date%
+echo You Are Offline! to get online go to Computer host and enter '1' and enter '2' to go to Connection Panel.
+echo Not online, Erorr 01j2
+timeout 6 >nul
+goto Main
+
+:Yago
+cls
+echo Welcome To Yago Edge!
+echo We Are A Search Engine Made For Searching Anything You Want!
+echo please input your search here!
+set /p S=Search Here!
+if %S% == 1 goto how
+if %S% == 2 goto help
+if %S% == 3 goto america
+if %S% == 4 goto uk
+if %S% == 5 goto games
+if %S% == 6 goto Main
+
+:how
+cls
+echo could not fine Ip 
+echo :
+echo :       (
+echo      (
+echo    (
+echo    (
+echo    (
+echo    (
+echo     (
+echo :    (
+echo :      (
+set /p exit=exit1=
+if %exit% == 1 goto Yago
+
+:help
+echo Sorry This Is Closed
+timeout 1 >nul
+goto Yago
+
+:Notes
+cls
+echo Welcome to notes
+echo What will be the name of your text?
+set /p writeone= Name:
+pause
+cls
+set /p textone=pause
+echo You will be going back to the desktop
+pause
+goto desktop
+
+:Settings
+cls
+echo Set MicroOS.america in your own way!
+echo ************************************
+echo 1)Devices
+echo 2)Storage Control
+echo 3)Backgroud
+echo 4)Pinghost
+set /p s=Select:
+if %s% == 1 goto Devices
+if %s% == 2 goto Storage
+if %s% == 3 goto Backgroud
+if %s% == 4 goto Main
+
+:Devices
+cls
+echo Select Device To Connect To
+echo.
+echo 1)MicroOS Storage Device
+echo 2)MicroOS Phone
+echo 3)Member.america/MicroOS
+set /p s=Select:
+if %s% == 1 goto Cantconnect
+if %s% == 2 goto Cantconnect
+if %s% == 3 goto Cantconnect
+if %s% == 4 goto Main
+
+:Cantconnect
+cls
+echo Cant connect to device.
+timeout 3 >nul
+goto Main
+
+:Storage
+cls
+echo %storage%
+timeout 2 >nul
+goto Main
+
+:Microhelp
+cls
